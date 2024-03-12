@@ -11,7 +11,7 @@ public class UserSettingFormController {
     public JFXButton clearButton;
     public Separator separator1;
     public Separator separator2;
-    public JFXTextField password;
+    public JFXTextField password1;
     public JFXTextField password2;
     public JFXButton change2Button;
     public JFXButton clear2Button;

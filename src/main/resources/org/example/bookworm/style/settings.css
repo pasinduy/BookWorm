@@ -68,7 +68,7 @@
     -fx-border-color: #66afe9; /* Blue border color when focused */
 }
 
-#password:focused{
+#password1:focused{
     -fx-border-color: #66afe9; /* Blue border color when focused */
 }
 
@@ -76,7 +76,7 @@
     -fx-border-color: #66afe9; /* Blue border color when focused */
 }
 
-#password{
+#password1{
     -fx-background-color: #F0F0F0; /* Light grey background color */
     -fx-font-size: 14px; /* Font size */
     -fx-padding: 5px; /* Padding */

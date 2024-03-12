@@ -49,7 +49,7 @@
                   <content>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                           <children>
-                              <JFXTextField fx:id="password" layoutX="320.0" layoutY="227.0" prefHeight="43.0" prefWidth="276.0" stylesheets="@../style/settings.css" />
+                              <JFXTextField fx:id="password1" layoutX="320.0" layoutY="227.0" prefHeight="43.0" prefWidth="276.0" stylesheets="@../style/settings.css" />
                               <JFXTextField fx:id="password2" layoutX="320.0" layoutY="372.0" prefHeight="43.0" prefWidth="276.0" stylesheets="@../style/settings.css" />
                               <JFXButton fx:id="change2Button" buttonType="RAISED" layoutX="354.0" layoutY="502.0" prefHeight="43.0" prefWidth="88.0" stylesheets="@../style/settings.css" text="Change" />
                               <JFXButton fx:id="clear2Button" buttonType="RAISED" layoutX="483.0" layoutY="502.0" prefHeight="43.0" prefWidth="88.0" stylesheets="@../style/settings.css" text="Clear" />
