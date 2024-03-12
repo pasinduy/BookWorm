@@ -15,7 +15,7 @@ public class UserDaoImpl implements UserDAO {
 
     @Override
     public boolean save(User data, Session session) throws SQLException, ClassNotFoundException {
-        return false;
+        session.save(entity);
     }
 
     @Override

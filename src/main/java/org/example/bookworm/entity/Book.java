@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 @Entity
 public class Book {
     @Id
+    private String bookId;
     private String title;
     private String author;
     private String genre;
