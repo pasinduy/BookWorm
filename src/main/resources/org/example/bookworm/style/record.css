@@ -1,0 +1,60 @@
+.search_txtField{
+    -fx-border-color :  #0654e2;
+    -fx-prompt-text-fill: #000000FF;
+}
+
+.input_txtField{
+    -fx-border-color: #000000FF;
+    -fx-border-radius: 8px;
+    -fx-prompt-text-fill: #000000FF;
+}
+
+.datepicker{
+    -fx-border-color: #000000FF;
+    -fx-prompt-text-fill: #000000FF;
+    -fx-underline: false;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-family: Arial;
+}
+
+.gender_combobox{
+    -fx-border-color: #000000FF;
+    -fx-border-radius: 8px;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-family: Arial;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #3f61a2;
+    -fx-background-radius: 15px;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-family: Arial;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-family: Arial;
+    -fx-alignment: center;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.table-view .table-row-cell{
+    -fx-border-color: white;
+}
+
+.table-row-cell:selected {
+    -fx-background-color:linear-gradient(from 0% 0% to 100% 100%, white 0%, #3f61a2 50%, white 100%);
+}

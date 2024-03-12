@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="700.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bookworm.controller.UserHistoryFormController">
+   <children>
+      <TableView layoutX="116.0" layoutY="99.0" prefHeight="503.0" prefWidth="740.0">
+        <columns>
+          <TableColumn fx:id="clmTitle" prefWidth="247.0" text="Book Title" />
+          <TableColumn fx:id="clmDate" prefWidth="210.0" text="Due Date" />
+            <TableColumn fx:id="clmStatus" prefWidth="282.0" text="Status (Returned Or Not)" />
+        </columns>
+      </TableView>
+      <Label layoutX="391.0" layoutY="39.0" text="History Of User">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

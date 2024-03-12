@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bookworm.controller.UserSettingFormController">
+    <children>
+      <StackPane prefHeight="700.0" prefWidth="950.0">
+         <children>
+            <TabPane prefHeight="127.0" prefWidth="950.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Change Username">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                                <JFXTextField fx:id="username" layoutX="320.0" layoutY="227.0" prefHeight="43.0" prefWidth="276.0" stylesheets="@../style/settings.css" />
+                                <JFXTextField fx:id="username2" layoutX="320.0" layoutY="372.0" prefHeight="43.0" prefWidth="276.0" stylesheets="@../style/settings.css" />
+                                <JFXButton fx:id="changeButton" buttonType="RAISED" layoutX="354.0" layoutY="502.0" prefHeight="43.0" prefWidth="88.0" stylesheets="@../style/settings.css" text="Change" />
+                                <JFXButton fx:id="clearButton" buttonType="RAISED" layoutX="483.0" layoutY="502.0" prefHeight="43.0" prefWidth="88.0" stylesheets="@../style/settings.css" text="Clear" />
+                                <Separator fx:id="separator1" layoutX="231.0" layoutY="61.0" orientation="VERTICAL" prefHeight="517.0" prefWidth="27.0" stylesheets="@../style/settings.css" />
+                                <Separator fx:id="separator2" layoutX="652.0" layoutY="61.0" orientation="VERTICAL" prefHeight="517.0" prefWidth="27.0" stylesheets="@../style/settings.css" />
+                                <Label layoutX="361.0" layoutY="180.0" text="Enter Your Current Username">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                              </Label>
+                                <Label layoutX="371.0" layoutY="325.0" text="Enter Your New Username">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                              </Label>
+                                <Label layoutX="337.0" layoutY="69.0" text="Change Username">
+                                    <font>
+                                        <Font name="Marlett" size="30.0" />
+                                    </font>
+                                </Label>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Change Password">
+                  <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                          <children>
+                              <JFXTextField fx:id="password" layoutX="320.0" layoutY="227.0" prefHeight="43.0" prefWidth="276.0" stylesheets="@../style/settings.css" />
+                              <JFXTextField fx:id="password2" layoutX="320.0" layoutY="372.0" prefHeight="43.0" prefWidth="276.0" stylesheets="@../style/settings.css" />
+                              <JFXButton fx:id="change2Button" buttonType="RAISED" layoutX="354.0" layoutY="502.0" prefHeight="43.0" prefWidth="88.0" stylesheets="@../style/settings.css" text="Change" />
+                              <JFXButton fx:id="clear2Button" buttonType="RAISED" layoutX="483.0" layoutY="502.0" prefHeight="43.0" prefWidth="88.0" stylesheets="@../style/settings.css" text="Clear" />
+                              <Separator fx:id="separator3" layoutX="231.0" layoutY="61.0" orientation="VERTICAL" prefHeight="517.0" prefWidth="27.0" stylesheets="@../style/settings.css" />
+                              <Separator fx:id="separator4" layoutX="652.0" layoutY="61.0" orientation="VERTICAL" prefHeight="517.0" prefWidth="27.0" stylesheets="@../style/settings.css" />
+                              <Label layoutX="361.0" layoutY="180.0" text="Enter Your Current Password">
+                                  <font>
+                                      <Font size="15.0" />
+                                  </font>
+                              </Label>
+                              <Label layoutX="371.0" layoutY="325.0" text="Enter Your New Password">
+                                  <font>
+                                      <Font size="15.0" />
+                                  </font>
+                              </Label>
+                              <Label layoutX="341.0" layoutY="70.0" text="Change Password">
+                                  <font>
+                                      <Font name="Marlett" size="30.0" />
+                                  </font>
+                              </Label>
+                          </children>
+                      </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </StackPane>
+    </children>
+</AnchorPane>

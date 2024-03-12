@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-radius: 40; -fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bookworm.controller.AdminLoginFormController">
+    <children>
+        <AnchorPane fx:id="LoginPanel" layoutX="636.0" prefHeight="600.0" prefWidth="364.0" stylesheets="@../style/login.css">
+            <children>
+                <ImageView fitHeight="490.0" fitWidth="597.0" layoutX="-218.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assets/login-photo.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <Label layoutX="164.0" layoutY="131.0" prefHeight="66.0" prefWidth="166.0" text="Log In">
+            <font>
+                <Font name="UD Digi Kyokasho NK-B" size="50.0" />
+            </font>
+        </Label>
+        <Label layoutX="165.0" layoutY="100.0" text="Welcome To BookWorm !!">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="127.0" layoutY="227.0" text="Username" />
+        <Label layoutX="129.0" layoutY="327.0" text="Password" />
+        <JFXComboBox fx:id="username" layoutX="126.0" layoutY="252.0" prefHeight="40.0" prefWidth="243.0" stylesheets="@../style/login.css" />
+        <JFXTextField fx:id="password" layoutX="125.0" layoutY="352.0" prefHeight="40.0" prefWidth="243.0" stylesheets="@../style/login.css" />
+        <JFXButton buttonType="RAISED" contentDisplay="RIGHT" graphicTextGap="10.0" layoutX="188.0" layoutY="435.0" onAction="#LoginBtn" prefHeight="40.0" prefWidth="120.0" stylesheets="@../style/login.css" text="LOGIN">
+            <graphic>
+                <ImageView fitHeight="33.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assets/icons8-arrow-50.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <Label contentDisplay="RIGHT" layoutX="103.0" layoutY="511.0" prefHeight="32.0" prefWidth="290.0" text="Don't Have an Account Yet ? ">
+            <graphic>
+                <Hyperlink contentDisplay="RIGHT" onAction="#SignInPage" text="Click Here To Sign In !!" />
+            </graphic>
+        </Label>
+    </children>
+
+</AnchorPane>

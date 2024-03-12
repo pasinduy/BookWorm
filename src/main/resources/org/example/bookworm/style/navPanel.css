@@ -1,0 +1,32 @@
+/* styles.css */
+.hbox {
+    -fx-background-color: #f0f0f0;
+    -fx-padding: 10px;
+}
+
+/* styles.css */
+.button {
+    -fx-background-color: #ffffff; /* Green */
+    -fx-text-fill: #000000;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #ffffff; /* Darker Green */
+}
+
+.button:pressed {
+    -fx-background-color: #ffffff; /* Even Darker Green */
+}
+
+#dashboardNav{
+    -fx-background-color : #ececec;
+    -fx-background-radius: 0 50px 50px 0;
+}
+
+#SecRoot{
+}

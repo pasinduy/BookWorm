@@ -1,0 +1,119 @@
+#clearButton{
+    -fx-background-color: #FF5733; /* Orange color for Clear button */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 5px 10px; /* Padding */
+    -fx-background-radius: 5px; /* Border radius */
+    -fx-border-color: transparent; /* Transparent border */
+}
+
+#clearButton:hover{
+    -fx-background-color: #FF8040; /* Darker shade of orange on hover */
+}
+
+#changeButton{
+    -fx-background-color: #3498DB; /* Blue color for Change button */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 5px 10px; /* Padding */
+    -fx-background-radius: 5px; /* Border radius */
+    -fx-border-color: transparent; /* Transparent border */
+}
+
+#changeButton:hover{
+    -fx-background-color: #5DADE2; /* Darker shade of blue on hover */
+}
+
+#separator1{
+    -fx-background-color: #CCCCCC; /* Color of the separator */
+    -fx-padding: 0.5px; /* Thickness of the separator */
+}
+
+#separator2{
+    -fx-background-color: #CCCCCC; /* Color of the separator */
+    -fx-padding: 0.5px; /* Thickness of the separator */
+}
+
+#separator3{
+    -fx-background-color: #CCCCCC; /* Color of the separator */
+    -fx-padding: 0.5px; /* Thickness of the separator */
+}
+
+#separator4{
+    -fx-background-color: #CCCCCC; /* Color of the separator */
+    -fx-padding: 0.5px; /* Thickness of the separator */
+}
+
+#username{
+    -fx-background-color: #F0F0F0; /* Light grey background color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 5px; /* Padding */
+    -fx-background-radius: 5px; /* Border radius */
+    -fx-border-color: #CCCCCC; /* Light grey border color */
+}
+
+#username2{
+    -fx-background-color: #F0F0F0; /* Light grey background color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 5px; /* Padding */
+    -fx-background-radius: 5px; /* Border radius */
+    -fx-border-color: #CCCCCC; /* Light grey border color */
+}
+
+#username:focused{
+    -fx-border-color: #66afe9; /* Blue border color when focused */
+}
+
+#username2:focused{
+    -fx-border-color: #66afe9; /* Blue border color when focused */
+}
+
+#password:focused{
+    -fx-border-color: #66afe9; /* Blue border color when focused */
+}
+
+#password2:focused{
+    -fx-border-color: #66afe9; /* Blue border color when focused */
+}
+
+#password{
+    -fx-background-color: #F0F0F0; /* Light grey background color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 5px; /* Padding */
+    -fx-background-radius: 5px; /* Border radius */
+    -fx-border-color: #CCCCCC; /* Light grey border color */
+}
+
+#password2{
+    -fx-background-color: #F0F0F0; /* Light grey background color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 5px; /* Padding */
+    -fx-background-radius: 5px; /* Border radius */
+    -fx-border-color: #CCCCCC; /* Light grey border color */
+}
+
+#clear2Button{
+    -fx-background-color: #FF5733; /* Orange color for Clear button */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 5px 10px; /* Padding */
+    -fx-background-radius: 5px; /* Border radius */
+    -fx-border-color: transparent; /* Transparent border */
+}
+
+#clear2Button:hover{
+    -fx-background-color: #FF8040; /* Darker shade of orange on hover */
+}
+
+#change2Button{
+    -fx-background-color: #3498DB; /* Blue color for Change button */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 5px 10px; /* Padding */
+    -fx-background-radius: 5px; /* Border radius */
+    -fx-border-color: transparent; /* Transparent border */
+}
+
+#change2Button:hover{
+    -fx-background-color: #5DADE2; /* Darker shade of blue on hover */
+}
