@@ -1,5 +1,6 @@
 package org.example.bookworm.factory;
 
+import org.example.bookworm.bo.SuperBO;
 import org.example.bookworm.bo.custom.impl.*;
 
 public class BOFactory {
