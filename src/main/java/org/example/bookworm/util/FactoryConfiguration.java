@@ -1,11 +1,6 @@
 package org.example.bookworm.util;
 
-import org.example.bookworm.entity.Admin;
-import org.example.bookworm.entity.Book;
-import org.example.bookworm.entity.Branch;
-import org.example.bookworm.entity.Reader;
-import org.example.bookworm.entity.Reservation;
-import org.example.bookworm.entity.User;
+import org.example.bookworm.entity.*;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
