@@ -1,7 +1,5 @@
-package org.example.bookworm.entity;
+package org.example.bookworm.tm;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,10 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
-public class Branch {
-    @Id
+public class BranchTm {
     private String branchId;
     private String branchName;
-    private String contactNo;
+    private String ContactNo;
 }
