@@ -1,4 +1,6 @@
 package org.example.bookworm.bo.custom;
 
-public interface BookBO {
+import org.example.bookworm.bo.SuperBO;
+
+public interface BookBO extends SuperBO {
 }

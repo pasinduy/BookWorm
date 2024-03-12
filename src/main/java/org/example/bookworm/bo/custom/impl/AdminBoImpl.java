@@ -1,4 +1,6 @@
 package org.example.bookworm.bo.custom.impl;
 
-public class AdminBoImpl {
+import org.example.bookworm.bo.custom.AdminBO;
+
+public class AdminBoImpl implements AdminBO {
 }

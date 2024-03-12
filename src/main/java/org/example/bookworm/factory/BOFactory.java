@@ -1,5 +1,7 @@
 package org.example.bookworm.factory;
 
+import org.example.bookworm.bo.custom.impl.*;
+
 public class BOFactory {
     private static BOFactory boFactory;
 

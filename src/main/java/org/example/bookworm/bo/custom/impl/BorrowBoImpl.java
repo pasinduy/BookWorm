@@ -1,4 +1,6 @@
 package org.example.bookworm.bo.custom.impl;
 
-public class BorrowBoImpl {
+import org.example.bookworm.bo.custom.BorrowBO;
+
+public class BorrowBoImpl implements BorrowBO {
 }

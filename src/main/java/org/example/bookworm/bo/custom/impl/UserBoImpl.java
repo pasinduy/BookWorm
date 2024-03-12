@@ -1,4 +1,6 @@
 package org.example.bookworm.bo.custom.impl;
 
-public class UserBoImpl {
+import org.example.bookworm.bo.custom.UserBO;
+
+public class UserBoImpl implements UserBO {
 }
