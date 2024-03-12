@@ -14,18 +14,15 @@ public class AdminDaoImpl implements AdminDAO {
     }
 
     @Override
-    public boolean save(Admin data, Session session) throws SQLException, ClassNotFoundException {
-        return false;
+    public boolean save(Admin entity, Session session) throws SQLException, ClassNotFoundException {
+        session.save(entity);
+        return true;
     }
 
     @Override
-    public boolean update(Admin data, Session session) throws SQLException, ClassNotFoundException {
-        return false;
-    }
-
-    @Override
-    public boolean exits(String s) throws SQLException, ClassNotFoundException {
-        return false;
+    public boolean update(Admin entity, Session session) throws SQLException, ClassNotFoundException {
+        session.update(entity);
+        return true;
     }
 
     @Override
@@ -39,7 +36,9 @@ public class AdminDaoImpl implements AdminDAO {
     }
 
     @Override
-    public Admin search(String Value, Session session) throws SQLException, ClassNotFoundException {
-        return null;
+    public Admin search(String id, Session session) throws SQLException, ClassNotFoundException {
+        try(session){
+            return session.get(Admin.class, id);
+        }
     }
 }
