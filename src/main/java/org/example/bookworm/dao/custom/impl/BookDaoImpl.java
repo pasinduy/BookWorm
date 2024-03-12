@@ -14,18 +14,15 @@ public class BookDaoImpl implements BookDAO {
     }
 
     @Override
-    public boolean save(Book data, Session session) throws SQLException, ClassNotFoundException {
-        return false;
+    public boolean save(Book entity, Session session) throws SQLException, ClassNotFoundException {
+        session.save(entity);
+        return true;
     }
 
     @Override
-    public boolean update(Book data, Session session) throws SQLException, ClassNotFoundException {
-        return false;
-    }
-
-    @Override
-    public boolean exits(String s) throws SQLException, ClassNotFoundException {
-        return false;
+    public boolean update(Book entity, Session session) throws SQLException, ClassNotFoundException {
+        session.update(entity);
+        return true;
     }
 
     @Override
