@@ -3,8 +3,6 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import java.lang.String?>
 <?import javafx.scene.Cursor?>
-<?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
@@ -18,23 +16,17 @@
 <AnchorPane prefHeight="700.0" prefWidth="950.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bookworm.controller.AdminBranchFormController">
     <AnchorPane fx:id="root" layoutX="31.0" layoutY="94.0" prefHeight="276.0" prefWidth="890.0" style="-fx-background-color: #f2f4f7; -fx-background-radius: 20;">
         <children>
-            <TextField fx:id="txtName" layoutX="246.0" layoutY="91.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-radius: 8;" styleClass="input_txtField" stylesheets="@../style/record.css">
+            <TextField fx:id="txtName" layoutX="247.0" layoutY="110.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-radius: 8;" styleClass="input_txtField" stylesheets="@../style/record.css">
                 <font>
                     <Font name="Arial Bold" size="15.0" />
                 </font>
             </TextField>
-            <TextField fx:id="txtContact" layoutX="571.0" layoutY="91.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-radius: 8;" styleClass="input_txtField" stylesheets="@../style/record.css">
+            <TextField fx:id="txtContact" layoutX="572.0" layoutY="110.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-radius: 8;" styleClass="input_txtField" stylesheets="@../style/record.css">
                 <font>
                     <Font name="Arial Bold" size="15.0" />
                 </font>
             </TextField>
-            <Label layoutX="573.0" layoutY="67.0" prefHeight="20.0" prefWidth="98.0" text="Genre">
-                <font>
-                    <Font name="Arial Bold" size="15.0" />
-                </font>
-            </Label>
-            <ComboBox id="branchName" fx:id="branchName" layoutX="664.0" layoutY="165.0" prefHeight="40.0" prefWidth="206.0" style="-fx-background-color: white;" styleClass="branchName" stylesheets="@../style/record.css" />
-            <Label layoutX="665.0" layoutY="143.0" prefHeight="20.0" prefWidth="98.0" text="Branch Name">
+            <Label layoutX="574.0" layoutY="86.0" prefHeight="20.0" prefWidth="121.0" text="Contact Number">
                 <font>
                     <Font name="Arial Bold" size="15.0" />
                 </font>
@@ -49,12 +41,7 @@
                     <Font name="Arial Bold" size="20.0" />
                 </font>
             </JFXButton>
-            <TextField fx:id="txtAddress" layoutX="15.0" layoutY="165.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-radius: 8;" styleClass="input_txtField" stylesheets="@../style/record.css">
-                <font>
-                    <Font name="Arial Bold" size="15.0" />
-                </font>
-            </TextField>
-            <TextField id="search_txtField" fx:id="txtSearch" layoutX="16.0" layoutY="15.0" onAction="#txtSearchOnAction" prefHeight="40.0" prefWidth="374.0" promptText="Search Book Id" styleClass="search_txtField" stylesheets="@../style/record.css">
+            <TextField id="search_txtField" fx:id="txtSearch" layoutX="16.0" layoutY="15.0" onAction="#txtSearchOnAction" prefHeight="40.0" prefWidth="374.0" promptText="Search Branch Id" styleClass="search_txtField" stylesheets="@../style/record.css">
                 <font>
                     <Font name="Arial Bold" size="15.0" />
                 </font>
@@ -62,7 +49,7 @@
                     <DropShadow color="#02a8c4" />
                 </effect>
             </TextField>
-            <JFXButton fx:id="btnSearch" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="389.0" layoutY="12.0" onAction="#btnSearchOnAction" prefHeight="42.5" prefWidth="65.0" style="-fx-background-color: #5585b5;" text="." textFill="WHITE">
+            <JFXButton fx:id="btnSearch" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="389.0" layoutY="15.0" onAction="#btnSearchOnAction" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: #5585b5;" text="." textFill="WHITE">
                 <cursor>
                     <Cursor fx:constant="HAND" />
                 </cursor>
@@ -80,42 +67,37 @@
                     </ImageView>
                 </graphic>
             </JFXButton>
-            <TextField fx:id="txtId" layoutX="17.0" layoutY="90.0" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 8;" styleClass="input_txtField" stylesheets="@../style/record.css">
+            <TextField fx:id="txtId" layoutX="18.0" layoutY="109.0" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 8;" styleClass="input_txtField" stylesheets="@../style/record.css">
                 <font>
                     <Font name="Arial Bold" size="15.0" />
                 </font>
             </TextField>
-            <Label layoutX="18.0" layoutY="68.0" prefHeight="20.0" prefWidth="81.0" text="Id">
+            <Label layoutX="19.0" layoutY="87.0" prefHeight="20.0" prefWidth="81.0" text="Branch ID">
                 <font>
                     <Font name="Arial Bold" size="15.0" />
                 </font>
             </Label>
-            <Label layoutX="247.0" layoutY="68.0" prefHeight="20.0" prefWidth="98.0" text="Title">
+            <Label layoutX="248.0" layoutY="87.0" prefHeight="20.0" prefWidth="98.0" text="Branch Name">
                 <font>
                     <Font name="Arial Bold" size="15.0" />
                 </font>
             </Label>
-            <Label layoutX="16.0" layoutY="143.0" prefHeight="20.0" prefWidth="98.0" text="Author">
-                <font>
-                    <Font name="Arial Bold" size="15.0" />
-                </font>
-            </Label>
-            <Label layoutX="340.0" layoutY="141.0" prefHeight="20.0" prefWidth="98.0" text="Date of Birth">
-                <font>
-                    <Font name="Arial Bold" size="15.0" />
-                </font>
-            </Label>
-            <DatePicker fx:id="txtDOB" layoutX="340.0" layoutY="164.0" prefHeight="40.0" prefWidth="286.0" style="-fx-background-color: white; -fx-border-radius: 8;" styleClass="datepicker" stylesheets="@../style/record.css" />
         </children>
     </AnchorPane>
-
-    <TableView fx:id="tblTenants" layoutX="31.0" layoutY="394.0" prefHeight="292.0" prefWidth="890.0" style="-fx-background-color: #f2f4f7;" stylesheets="@../style/record.css">
+    <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="43.0" layoutY="24.0" onAction="#Back" prefHeight="53.0" prefWidth="51.0">
+        <graphic>
+            <ImageView fitHeight="51.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../assets/back-arrow.png" />
+                </image>
+            </ImageView>
+        </graphic>
+    </JFXButton>
+    <TableView fx:id="tblBranches" layoutX="31.0" layoutY="394.0" prefHeight="292.0" prefWidth="890.0" style="-fx-background-color: #f2f4f7;" stylesheets="@../style/record.css">
         <columns>
-            <TableColumn fx:id="colBookId" prefWidth="131.55103588104248" text="Id" />
-            <TableColumn fx:id="colBookTitle" prefWidth="205.1021728515625" text="Title" />
-            <TableColumn fx:id="colAuthor" prefWidth="179.89785766601562" text="Author" />
-            <TableColumn fx:id="colGenre" prefWidth="194.13311767578125" text="Genre" />
-            <TableColumn fx:id="colBranchName" prefWidth="176.8668212890625" text="Branch Name" />
+            <TableColumn fx:id="colBranchId" prefWidth="265.0" text="Id" />
+            <TableColumn fx:id="colBranchName" prefWidth="350.0" text="Name" />
+            <TableColumn fx:id="colContact" prefWidth="272.0" text="Contact" />
         </columns>
         <styleClass>
             <String fx:value="table-cell" />
@@ -125,12 +107,12 @@
     </TableView>
     <AnchorPane fx:id="SecRoot" layoutX="392.0" layoutY="14.0" prefHeight="72.0" prefWidth="166.0">
         <children>
-            <Label layoutX="31.0" layoutY="6.0" text="Books">
+            <Label layoutX="31.0" layoutY="6.0" text="Branches">
                 <font>
                     <Font name="Gill Sans Nova Cond XBd" size="45.0" />
                 </font>
             </Label>
-        </children></AnchorPane>
-
-
+        </children>
+    </AnchorPane>
+    
 </AnchorPane>

@@ -46,4 +46,9 @@ public class AdminNavigationPanelController {
         newStage.setScene(new Scene(new FXMLLoader(getClass().getResource("/org/example/bookworm/view/admin-login.fxml")).load()));
         newStage.show();
     }
+
+    public void branch(ActionEvent actionEvent) throws IOException {
+        this.SecRoot.getChildren().clear();
+        this.SecRoot.getChildren().add(FXMLLoader.load(this.getClass().getResource("/org/example/bookworm/view/admin-branches.fxml")));
+    }
 }

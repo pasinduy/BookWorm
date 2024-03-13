@@ -49,15 +49,15 @@
                 <Cursor fx:constant="HAND" />
             </cursor>
         </JFXButton>
-        <Button layoutX="30.0" layoutY="26.0" mnemonicParsing="false" onAction="#Back" prefHeight="40.0" prefWidth="33.0">
+        <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="43.0" layoutY="24.0" onAction="#Back" prefHeight="53.0" prefWidth="51.0">
             <graphic>
-                <ImageView fitHeight="37.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="51.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../assets/icons8-before-32.png" />
+                        <Image url="@../assets/back-arrow.png" />
                     </image>
                 </ImageView>
             </graphic>
-        </Button>
+        </JFXButton>
 
     </children>
 

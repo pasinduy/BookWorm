@@ -1,14 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import java.lang.String?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="org.example.bookworm.controller.UserBookFormController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<AnchorPane fx:id="root" prefHeight="700.0" prefWidth="950.0" style="-fx-background-color: white" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bookworm.controller.UserBookFormController">
+    <children>
+        <AnchorPane fx:id="SecRoot" layoutX="392.0" layoutY="14.0" prefHeight="72.0" prefWidth="166.0" style="-fx-background-color: #f2f4f7; -fx-background-radius: 20;">
+            <children>
+                <Label layoutX="31.0" layoutY="6.0" text="Books">
+                    <font>
+                        <Font name="Gill Sans Nova Cond XBd" size="45.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <TableView fx:id="tblBooks" layoutX="31.0" layoutY="94.0" prefHeight="592.0" prefWidth="890.0" style="-fx-background-color: #f2f4f7;" stylesheets="@../style/record.css">
+            <columns>
+                <TableColumn fx:id="colBookId" prefWidth="131.55103588104248" text="Id" />
+                <TableColumn fx:id="colBookTitle" prefWidth="205.1021728515625" text="Title" />
+                <TableColumn fx:id="colAuthor" prefWidth="179.89785766601562" text="Author" />
+                <TableColumn fx:id="colGenre" prefWidth="194.13311767578125" text="Genre" />
+                <TableColumn fx:id="colBranchName" prefWidth="176.8668212890625" text="Branch Name" />
+            </columns>
+            <styleClass>
+                <String fx:value="table-cell" />
+                <String fx:value="table-row-cell" />
+                <String fx:value="table-view" />
+            </styleClass>
+        </TableView>
+        <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="43.0" layoutY="24.0" onAction="#Back" prefHeight="53.0" prefWidth="51.0">
+            <graphic>
+                <ImageView fitHeight="51.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assets/back-arrow.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+    </children>
 </AnchorPane>

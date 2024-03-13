@@ -39,4 +39,7 @@ public class AdminBookFormController {
 
     public void btnSearchOnAction(ActionEvent actionEvent) {
     }
+
+    public void Back(ActionEvent actionEvent) {
+    }
 }
