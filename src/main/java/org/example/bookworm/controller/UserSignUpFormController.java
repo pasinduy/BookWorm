@@ -29,7 +29,7 @@ public class UserSignUpFormController {
 
     public void Back(ActionEvent actionEvent) throws IOException {
         this.root.getChildren().clear();
-        this.root.getChildren().add(FXMLLoader.load(this.getClass().getResource("/org/example/bookworm/view/user-signIn.fxml")));
+        this.root.getChildren().add(FXMLLoader.load(this.getClass().getResource("/org/example/bookworm/view/user-login.fxml")));
     }
 
     public void SignBtn(ActionEvent actionEvent) {
@@ -42,7 +42,10 @@ public class UserSignUpFormController {
                 System.out.println(password1.getText());
                 Alert alert = new Alert(Alert.AlertType.INFORMATION, "Registration Success! ");
                 alert.showAndWait();
+                alert.close();
                 clear();
+                this.root.getChildren().clear();
+                this.root.getChildren().add(FXMLLoader.load(this.getClass().getResource("/org/example/bookworm/view/user-login.fxml")));
             } else {
                 new Alert(Alert.AlertType.INFORMATION, "Invalid input or password are not match!").showAndWait();
             }
