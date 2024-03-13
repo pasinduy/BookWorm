@@ -13,6 +13,5 @@ import lombok.NoArgsConstructor;
 public class Admin {
     @Id
     private String Id;
-    private String username;
     private String password;
 }

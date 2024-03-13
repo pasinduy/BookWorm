@@ -7,7 +7,7 @@ import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
-public class FactoryConfiguration {
+public class  FactoryConfiguration {
     private static FactoryConfiguration factoryConfiguration;
     private final SessionFactory sessionFactory;
 
@@ -25,7 +25,7 @@ public class FactoryConfiguration {
         sessionFactory =  metadata.getSessionFactoryBuilder().build();
     }
 
-    public static FactoryConfiguration getInstance(){
+    public static FactoryConfiguration getFactoryConfiguration(){
         return (factoryConfiguration == null) ? factoryConfiguration = new FactoryConfiguration() : factoryConfiguration;
     }
 
