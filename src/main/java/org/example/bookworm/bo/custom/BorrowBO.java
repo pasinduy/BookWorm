@@ -7,15 +7,18 @@ import org.example.bookworm.dto.BorrowDto;
 import java.util.List;
 
 public interface BorrowBO extends SuperBO {
-    void saveTenant(BorrowDto dto);
+    BorrowDto viewBorrow(String id);
 
-    void updateTenant(BorrowDto dto);
+    void saveBorrow(BorrowDto borrow);
 
-    List<BorrowDto> getAllBooks();
+    void updateBorrow(BorrowDto reservation);
+
+    void deleteBorrow(String text);
+
+    Integer getBorrowCount(String borrowId);
 
     String getLastId();
 
-    void deleteTenant(String borrowId);
+    List<BorrowDto> getAll();
 
-    BorrowDto viewTenant(BorrowDto dto);
 }
