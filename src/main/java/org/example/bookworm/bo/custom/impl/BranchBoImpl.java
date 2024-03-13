@@ -6,18 +6,19 @@ import org.example.bookworm.dto.BranchDto;
 import java.util.List;
 
 public class BranchBoImpl implements BranchBO {
+
     @Override
-    public void saveTenant(BranchDto dto) {
+    public void saveBranch(BranchDto dto) {
 
     }
 
     @Override
-    public void updateTenant(BranchDto dto) {
+    public void updateBranch(BranchDto dto) {
 
     }
 
     @Override
-    public List<BranchDto> getAllBooks() {
+    public List<BranchDto> getAllBranch() {
         return null;
     }
 
@@ -27,12 +28,12 @@ public class BranchBoImpl implements BranchBO {
     }
 
     @Override
-    public void deleteTenant(String branchId) {
+    public void deleteBranch(String branchId) {
 
     }
 
     @Override
-    public BranchDto viewTenant(BranchDto dto) {
+    public BranchDto viewBranch(BranchDto dto) {
         return null;
     }
 }

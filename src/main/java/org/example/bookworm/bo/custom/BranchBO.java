@@ -7,15 +7,15 @@ import org.example.bookworm.dto.BranchDto;
 import java.util.List;
 
 public interface BranchBO extends SuperBO {
-    void saveTenant(BranchDto dto);
+    void saveBranch(BranchDto dto);
 
-    void updateTenant(BranchDto dto);
+    void updateBranch(BranchDto dto);
 
-    List<BranchDto> getAllBooks();
+    List<BranchDto> getAllBranch();
 
     String getLastId();
 
-    void deleteTenant(String branchId);
+    void deleteBranch(String branchId);
 
-    BranchDto viewTenant(BranchDto dto);
+    BranchDto viewBranch(BranchDto dto);
 }
