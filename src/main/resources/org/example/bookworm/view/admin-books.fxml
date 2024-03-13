@@ -61,7 +61,7 @@
                     <DropShadow color="#02a8c4" />
                 </effect>
             </TextField>
-            <JFXButton fx:id="btnSearch" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="389.0" layoutY="12.0" onAction="#btnSearchOnAction" prefHeight="42.5" prefWidth="65.0" style="-fx-background-color: #5585b5;" text="." textFill="WHITE">
+            <JFXButton fx:id="btnSearch" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="389.0" layoutY="12.0" onAction="#btnSearchOnAction" prefHeight="42.5" prefWidth="65.0" style="-fx-background-color: #5585b5;" stylesheets="@../style/book.css" text="." textFill="WHITE">
                 <cursor>
                     <Cursor fx:constant="HAND" />
                 </cursor>

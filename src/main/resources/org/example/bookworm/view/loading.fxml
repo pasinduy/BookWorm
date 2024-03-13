@@ -11,12 +11,12 @@
     <children>
         <ImageView fx:id="imageView" fitHeight="375.0" fitWidth="375.0" layoutX="64.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
         <ProgressBar cache="true" layoutX="57.0" layoutY="463.0" prefHeight="26.0" prefWidth="387.0" />
-      <Label layoutX="161.0" layoutY="390.0" text="BOOKWORM">
+      <Label layoutX="161.0" layoutY="390.0" text="BOOKWORM" textFill="WHITE">
          <font>
             <Font name="Gill Sans Nova Cond XBd" size="36.0" />
          </font>
       </Label>
-      <Label layoutX="164.0" layoutY="434.0" text="Online Library Management System">
+      <Label layoutX="164.0" layoutY="434.0" text="Online Library Management System" textFill="WHITE">
          <font>
             <Font name="Gill Sans Nova Cond XBd" size="12.0" />
          </font>
