@@ -19,14 +19,14 @@ public class UserNavigationPanelController {
         this.SecRoot.getChildren().add(FXMLLoader.load(this.getClass().getResource("/org/example/bookworm/view/user-dashboard.fxml")));
     }
 
+    public void book(ActionEvent actionEvent) throws IOException {
+        this.SecRoot.getChildren().clear();
+        this.SecRoot.getChildren().add(FXMLLoader.load(this.getClass().getResource("/org/example/bookworm/view/user-book.fxml")));
+    }
+
     public void dashboard(ActionEvent actionEvent) throws IOException {
         this.SecRoot.getChildren().clear();
         this.SecRoot.getChildren().add(FXMLLoader.load(this.getClass().getResource("/org/example/bookworm/view/user-dashboard.fxml")));
-    }
-
-    public void history(ActionEvent actionEvent) throws IOException {
-        this.SecRoot.getChildren().clear();
-        this.SecRoot.getChildren().add(FXMLLoader.load(this.getClass().getResource("/org/example/bookworm/view/user-history.fxml")));
     }
 
     public void transaction(ActionEvent actionEvent) throws IOException {
@@ -34,7 +34,7 @@ public class UserNavigationPanelController {
         this.SecRoot.getChildren().add(FXMLLoader.load(this.getClass().getResource("/org/example/bookworm/view/user-borrow.fxml")));
     }
 
-    public void History(ActionEvent actionEvent) throws IOException {
+    public void history(ActionEvent actionEvent) throws IOException {
         this.SecRoot.getChildren().clear();
         this.SecRoot.getChildren().add(FXMLLoader.load(this.getClass().getResource("/org/example/bookworm/view/user-history.fxml")));
     }
