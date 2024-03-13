@@ -17,4 +17,5 @@ public class Book {
     private String author;
     private String genre;
     private String status;
+    private String branchID;
 }

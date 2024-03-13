@@ -49,4 +49,13 @@ public class BorrowDaoImpl implements BorrowDAO {
     public Borrow search(String id, Session session) throws SQLException, ClassNotFoundException {
         return session.get(Borrow.class, id);
     }
+
+    @Override
+    public Integer getCount(String Id, Session session) {
+        String hql = "SELECT COUNT(*) FROM Borrow b";
+        Query<Long> query = session.createQuery(hql, Long.class);
+        query.setParameter("Title", Id);
+        Long count = query.uniqueResult();
+        return Math.toIntExact(count);
+    }
 }
