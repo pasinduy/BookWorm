@@ -6,12 +6,12 @@
 
 /* styles.css */
 .button {
-    -fx-background-color: #ffffff; /* Green */
+    -fx-background-color: #8eacb7; /* Green */
     -fx-text-fill: #000000;
     -fx-font-size: 14px;
     -fx-padding: 10px 20px;
     -fx-border-radius: 5px;
-    -fx-background-radius: 5px;
+    -fx-background-radius: 50px 0 50px 0;
     -fx-cursor: hand;
 }
 
@@ -26,6 +26,11 @@
 #dashboardNav{
     -fx-background-color : #ececec;
     -fx-background-radius: 0 50px 50px 0;
+}
+
+#ThirdRoot{
+    -fx-background-color : #21225e;
+    -fx-background-radius: 0 50px 0 50px;
 }
 
 #SecRoot{

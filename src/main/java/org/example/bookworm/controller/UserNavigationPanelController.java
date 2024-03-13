@@ -34,6 +34,11 @@ public class UserNavigationPanelController {
         this.SecRoot.getChildren().add(FXMLLoader.load(this.getClass().getResource("/org/example/bookworm/view/user-borrow.fxml")));
     }
 
+    public void History(ActionEvent actionEvent) throws IOException {
+        this.SecRoot.getChildren().clear();
+        this.SecRoot.getChildren().add(FXMLLoader.load(this.getClass().getResource("/org/example/bookworm/view/user-history.fxml")));
+    }
+
     public void settings(ActionEvent actionEvent) throws IOException {
         this.SecRoot.getChildren().clear();
         this.SecRoot.getChildren().add(FXMLLoader.load(this.getClass().getResource("/org/example/bookworm/view/user-setting.fxml")));

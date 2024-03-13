@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.text.Font?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane fx:id="root" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.bookworm.controller.UserChangeUsernameFormController"
+            prefHeight="700.0" prefWidth="950.0">
+
+    <children>
+        <JFXTextField fx:id="username" layoutX="320.0" layoutY="227.0" prefHeight="43.0" prefWidth="276.0" stylesheets="@../style/settings.css" />
+        <JFXTextField fx:id="username2" layoutX="320.0" layoutY="372.0" prefHeight="43.0" prefWidth="276.0" stylesheets="@../style/settings.css" />
+        <JFXButton fx:id="changeButton" buttonType="RAISED" layoutX="354.0" layoutY="502.0" prefHeight="43.0" prefWidth="88.0" stylesheets="@../style/settings.css" text="Change" onAction="#Change" />
+        <JFXButton fx:id="clearButton" buttonType="RAISED" layoutX="483.0" layoutY="502.0" prefHeight="43.0" prefWidth="88.0" stylesheets="@../style/settings.css" text="Clear" onAction="#Clear"/>
+        <Separator fx:id="separator1" layoutX="231.0" layoutY="61.0" orientation="VERTICAL" prefHeight="517.0" prefWidth="27.0" stylesheets="@../style/settings.css" />
+        <Separator fx:id="separator2" layoutX="652.0" layoutY="61.0" orientation="VERTICAL" prefHeight="517.0" prefWidth="27.0" stylesheets="@../style/settings.css" />
+        <Label layoutX="361.0" layoutY="180.0" text="Enter Your Current Username">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="371.0" layoutY="325.0" text="Enter Your New Username">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="337.0" layoutY="69.0" text="Change Username">
+            <font>
+                <Font name="Marlett" size="30.0" />
+            </font>
+        </Label>
+        <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="51.0" layoutY="49.0" onAction="#Back" prefHeight="53.0" prefWidth="51.0">
+            <graphic>
+                <ImageView fitHeight="51.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assets/back-arrow.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+
+    </children>
+</AnchorPane>
