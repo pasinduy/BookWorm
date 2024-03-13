@@ -6,13 +6,14 @@ import org.example.bookworm.dto.BookDto;
 import java.util.List;
 
 public class BookBoImpl implements BookBO {
+
     @Override
-    public void saveTenant(BookDto dto) {
+    public void saveBook(BookDto dto) {
 
     }
 
     @Override
-    public void updateTenant(BookDto dto) {
+    public void updateBook(BookDto dto) {
 
     }
 
@@ -27,12 +28,12 @@ public class BookBoImpl implements BookBO {
     }
 
     @Override
-    public void deleteTenant(String bookId) {
+    public void deleteBook(String bookId) {
 
     }
 
     @Override
-    public BookDto viewTenant(BookDto dto) {
+    public BookDto viewBook(BookDto dto) {
         return null;
     }
 }

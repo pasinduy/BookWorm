@@ -6,15 +6,15 @@ import org.example.bookworm.dto.BookDto;
 import java.util.List;
 
 public interface BookBO extends SuperBO {
-    void saveTenant(BookDto dto);
+    void saveBook(BookDto dto);
 
-    void updateTenant(BookDto dto);
+    void updateBook(BookDto dto);
 
     List<BookDto> getAllBooks();
 
     String getLastId();
 
-    void deleteTenant(String bookId);
+    void deleteBook(String bookId);
 
-    BookDto viewTenant(BookDto dto);
+    BookDto viewBook(BookDto dto);
 }
