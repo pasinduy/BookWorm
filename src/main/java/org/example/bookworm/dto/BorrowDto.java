@@ -1,4 +1,4 @@
 package org.example.bookworm.dto;
 
-public class branchDto {
+public class BorrowDto {
 }

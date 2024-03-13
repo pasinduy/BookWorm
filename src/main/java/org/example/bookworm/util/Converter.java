@@ -1,6 +1,6 @@
 package org.example.bookworm.util;
 
-import org.example.bookworm.dto.bookDto;
+import org.example.bookworm.dto.BookDto;
 import org.example.bookworm.entity.Book;
 
 public class Converter {
@@ -10,7 +10,7 @@ public class Converter {
 
     public static Converter getInstance(){return converter == null? converter = new Converter() : converter;}
 
-    public Book toBookEntity(bookDto dto){
+    public Book toBookEntity(BookDto dto){
         Book book = new Book();
         book.setTitle(book.getTitle());
         book.setAuthor(book.getAuthor());
@@ -19,8 +19,8 @@ public class Converter {
         return book;
     }
 
-    public bookDto toBookDto(Book book){
-        bookDto dto = new bookDto();
+    public BookDto toBookDto(Book book){
+        BookDto dto = new BookDto();
         dto.setTitle(dto.getTitle());
         dto.setAuthor(dto.getAuthor());
         dto.setGenre(dto.getGenre());

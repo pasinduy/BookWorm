@@ -3,12 +3,12 @@ package org.example.bookworm.factory;
 import org.example.bookworm.dao.SuperDAO;
 import org.example.bookworm.dao.custom.impl.*;
 
-public class DAOFactory {
-    private static DAOFactory daoFactory;
+public class DaoFactory {
+    private static DaoFactory daoFactory;
 
-    private DAOFactory(){}
+    private DaoFactory(){}
 
-    public static DAOFactory getDaoFactory(){return daoFactory == null? daoFactory = new DAOFactory() : daoFactory;}
+    public static DaoFactory getDaoFactory(){return daoFactory == null? daoFactory = new DaoFactory() : daoFactory;}
 
     public enum DAOTypes{
         ADMIN, BOOK, BRANCH, BORROW, USER
