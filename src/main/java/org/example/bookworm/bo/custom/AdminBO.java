@@ -1,17 +1,16 @@
 package org.example.bookworm.bo.custom;
 
 import org.example.bookworm.bo.SuperBO;
-import org.example.bookworm.dto.adminDto;
-import org.example.bookworm.entity.Admin;
+import org.example.bookworm.dto.AdminDto;
 
 import java.sql.SQLException;
 
 public interface AdminBO extends SuperBO {
-    void updateBook(adminDto dto);
+    void updateAdmin(AdminDto dto);
 
-    adminDto viewCredentials(String text) throws SQLException, ClassNotFoundException;
+    AdminDto viewCredentials(String text) throws SQLException, ClassNotFoundException;
 
-    adminDto getUserDetails(String userId) throws SQLException, ClassNotFoundException;
+    AdminDto getUserDetails(String userId) throws SQLException, ClassNotFoundException;
 
-    void saveUserDetails(adminDto dto);
+    void saveUserDetails(AdminDto dto);
 }
