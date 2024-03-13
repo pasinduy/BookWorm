@@ -18,7 +18,7 @@
     -fx-font-family: Arial;
 }
 
-.gender_combobox{
+.branchName{
     -fx-border-color: #000000FF;
     -fx-border-radius: 8px;
     -fx-text-fill: black;
