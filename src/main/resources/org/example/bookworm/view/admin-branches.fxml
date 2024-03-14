@@ -105,7 +105,7 @@
             <String fx:value="table-view" />
         </styleClass>
     </TableView>
-    <AnchorPane fx:id="SecRoot" layoutX="392.0" layoutY="14.0" prefHeight="72.0" prefWidth="166.0">
+    <AnchorPane fx:id="SecRoot" layoutX="392.0" layoutY="14.0" prefHeight="72.0" prefWidth="166.0" style="-fx-background-color: #f2f4f7; -fx-background-radius: 20;">
         <children>
             <Label layoutX="31.0" layoutY="6.0" text="Branches">
                 <font>
