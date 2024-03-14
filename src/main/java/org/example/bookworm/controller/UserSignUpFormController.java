@@ -7,11 +7,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Alert;
 import javafx.scene.layout.AnchorPane;
-import org.example.bookworm.bo.custom.AdminBO;
 import org.example.bookworm.bo.custom.UserBO;
-import org.example.bookworm.dto.AdminDto;
 import org.example.bookworm.dto.UserDto;
-import org.example.bookworm.entity.User;
 import org.example.bookworm.factory.BOFactory;
 import org.example.bookworm.util.RegExFactory;
 import org.example.bookworm.util.RegExType;
@@ -19,16 +16,15 @@ import org.example.bookworm.util.RegExType;
 import java.io.IOException;
 
 public class UserSignUpFormController {
-    public static final JFXDatePicker DOB = ;
+    public JFXDatePicker DOB;
     public AnchorPane root;
-    public AnchorPane signUp;
     public JFXTextField username;
     public JFXPasswordField password1;
     public JFXPasswordField password2;
     public JFXTextField email;
     public JFXTextField name;
-    public JFXTextField Contact;
-    public JFXTextField Address;
+    public JFXTextField contact;
+    public JFXTextField address;
     public AnchorPane circle2;
     public AnchorPane circle1;
     public AnchorPane circle3;
@@ -44,11 +40,8 @@ public class UserSignUpFormController {
     public void SignBtn(ActionEvent actionEvent) {
         try {
             if (checkRegEx()){
-                UserDto dto = new UserDto(username.getText(), email.getText(), password1.getText());
+                UserDto dto = new UserDto(username.getText(), email.getText(), name.getText(), address.getText(), contact.getText(), DOB.getValue(),password1.getText());
                 bo.saveUser(dto);
-                System.out.println(username.getText());
-                System.out.println(email.getText());
-                System.out.println(password1.getText());
                 Alert alert = new Alert(Alert.AlertType.INFORMATION, "Registration Success! ");
                 alert.showAndWait();
                 alert.close();
@@ -67,6 +60,10 @@ public class UserSignUpFormController {
     private void clear() {
         username.clear();
         email.clear();
+        name.clear();
+        contact.clear();
+        address.clear();
+        DOB.setValue(null);
         password1.clear();
         password2.clear();
     }

@@ -68,8 +68,8 @@
                   <Font name="Gill Sans Nova Cond XBd" size="20.0" />
                </font>
             </Label>
-            <JFXTextField fx:id="Contact" layoutX="349.0" layoutY="203.0" prefHeight="40.0" prefWidth="243.0" stylesheets="@../style/record.css" />
-            <JFXTextField fx:id="Address" layoutX="70.0" layoutY="286.0" prefHeight="40.0" prefWidth="243.0" stylesheets="@../style/record.css" />
+            <JFXTextField fx:id="contact" layoutX="349.0" layoutY="203.0" prefHeight="40.0" prefWidth="243.0" stylesheets="@../style/record.css" />
+            <JFXTextField fx:id="address" layoutX="70.0" layoutY="286.0" prefHeight="40.0" prefWidth="243.0" stylesheets="@../style/record.css" />
             <JFXDatePicker fx:id="DOB" layoutX="345.0" layoutY="286.0" prefHeight="40.0" prefWidth="243.0" />
             <Label layoutX="346.0" layoutY="260.0" text="Date Of Birth">
                <font>
