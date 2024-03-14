@@ -82,6 +82,6 @@
             </AnchorPane>
             </children>
         </AnchorPane>
-        <AnchorPane fx:id="SecRoot" layoutX="250.0" prefHeight="700.0" prefWidth="950.0" stylesheets="@../style/navPanel.css" />
+        <AnchorPane fx:id="SecRoot" layoutX="250.0" prefHeight="700.0" prefWidth="950.0" />
     </children>
 </AnchorPane>
