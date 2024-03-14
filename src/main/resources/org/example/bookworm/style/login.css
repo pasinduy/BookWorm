@@ -76,3 +76,22 @@
     -fx-background-radius: 20px 0 0 20px;
 }
 
+#circle1{
+    -fx-background-color:  #84b1c4;
+    -fx-background-radius: 0 0 0 500px;
+}
+
+#circle2{
+    -fx-background-color:  #0056b3;
+    -fx-background-radius: 0 500px 0 0;
+}
+
+#circle3{
+    -fx-background-color:  #84b1c4;
+    -fx-background-radius: 200px 500px 500px 0;
+}
+
+#circle4{
+    -fx-background-color:  #0056b3;
+    -fx-background-radius: 500px 200px 0 500px;
+}
