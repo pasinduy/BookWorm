@@ -1,5 +1,6 @@
 package org.example.bookworm.controller;
 
+import com.jfoenix.controls.JFXDatePicker;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
@@ -18,12 +19,20 @@ import org.example.bookworm.util.RegExType;
 import java.io.IOException;
 
 public class UserSignUpFormController {
+    public static final JFXDatePicker DOB = ;
     public AnchorPane root;
     public AnchorPane signUp;
     public JFXTextField username;
     public JFXPasswordField password1;
     public JFXPasswordField password2;
     public JFXTextField email;
+    public JFXTextField name;
+    public JFXTextField Contact;
+    public JFXTextField Address;
+    public AnchorPane circle2;
+    public AnchorPane circle1;
+    public AnchorPane circle3;
+    public AnchorPane circle4;
 
     UserBO bo = (UserBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.USER);
 
