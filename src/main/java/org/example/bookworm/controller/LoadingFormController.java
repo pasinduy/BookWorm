@@ -29,6 +29,7 @@ public class LoadingFormController implements Initializable {
             System.out.println("Welcome to BookWorm 1.0");
 
 
+
         });
 
         timeline.getKeyFrames().addAll(keyFrame1);

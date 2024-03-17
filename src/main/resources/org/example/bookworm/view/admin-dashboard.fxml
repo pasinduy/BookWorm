@@ -1,14 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="org.example.bookworm.controller.AdminDashboardFormController"
-            prefHeight="700.0" prefWidth="950.0">
 
+<AnchorPane prefHeight="700.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bookworm.controller.AdminDashboardFormController">
+   <children>
+      <Label layoutX="268.0" layoutY="36.0" prefHeight="61.0" prefWidth="429.0" text="Welcome To The Admin Page">
+         <font>
+            <Font name="Impact" size="36.0" />
+         </font>
+      </Label>
+      <Pane layoutX="226.0" layoutY="400.0" prefHeight="211.0" prefWidth="211.0" style="-fx-background-color: #bdbbbb; -fx-background-radius: 30;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="31.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/reading-book.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="370.0" layoutY="121.0" prefHeight="211.0" prefWidth="211.0" style="-fx-background-color: #bdbbbb; -fx-background-radius: 30;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="31.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/branch.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="627.0" layoutY="121.0" prefHeight="211.0" prefWidth="211.0" style="-fx-background-color: #bdbbbb; -fx-background-radius: 30;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="31.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/computer.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="120.0" layoutY="121.0" prefHeight="211.0" prefWidth="211.0" style="-fx-background-color: #bdbbbb; -fx-background-radius: 30;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="31.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/books.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="555.0" layoutY="400.0" prefHeight="211.0" prefWidth="211.0" style="-fx-background-color: #bdbbbb; -fx-background-radius: 30;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="31.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/overdue.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="726.0" layoutY="622.0" stylesheets="@../style/Dashboard.css" text="1">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="787.0" layoutY="342.0" stylesheets="@../style/Dashboard.css" text="5">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="268.0" layoutY="342.0" stylesheets="@../style/Dashboard.css" text="10">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="541.0" layoutY="342.0" stylesheets="@../style/Dashboard.css" text="2">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="388.0" layoutY="622.0" stylesheets="@../style/Dashboard.css" text="6">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="661.0" layoutY="344.0" text="User Count : ">
+         <font>
+            <Font name="Impact" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="138.0" layoutY="344.0" text="Book Count : ">
+         <font>
+            <Font name="Impact" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="388.0" layoutY="344.0" text="Branch Count : ">
+         <font>
+            <Font name="Impact" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="235.0" layoutY="624.0" text="Borrow Count : ">
+         <font>
+            <Font name="Impact" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="556.0" layoutY="624.0" text="Over Due Count : ">
+         <font>
+            <Font name="Impact" size="25.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>

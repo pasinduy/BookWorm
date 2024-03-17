@@ -23,13 +23,6 @@ public class UserLoginFormController {
     public Label hidePassword;
     public Label showPassword;
 
-    public void initialize(){
-        password1.setVisible(true);
-        password2.setVisible(false);
-        hidePassword.setVisible(false);
-        showPassword.setVisible(true);
-    }
-
     public void SignInPage(ActionEvent actionEvent) throws IOException {
         this.root.getChildren().clear();
         this.root.getChildren().add(FXMLLoader.load(this.getClass().getResource("/org/example/bookworm/view/user-signIn.fxml")));
@@ -51,6 +44,13 @@ public class UserLoginFormController {
         Stage newStage = new Stage();
         newStage.setScene(new Scene(new FXMLLoader(getClass().getResource("/org/example/bookworm/view/choose.fxml")).load()));
         newStage.show();
+    }
+
+    public void initialize(){
+        password1.setVisible(true);
+        password2.setVisible(false);
+        hidePassword.setVisible(false);
+        showPassword.setVisible(true);
     }
 
     public void ClickOpenEyes(MouseEvent mouseEvent) {

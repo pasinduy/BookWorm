@@ -7,11 +7,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Alert;
 import javafx.scene.layout.AnchorPane;
-import org.example.bookworm.bo.custom.UserBO;
+import org.example.bookworm.bo.custom.UserBo;
 import org.example.bookworm.dto.UserDto;
 import org.example.bookworm.factory.BOFactory;
-import org.example.bookworm.util.RegExFactory;
-import org.example.bookworm.util.RegExType;
 
 import java.io.IOException;
 
@@ -30,7 +28,7 @@ public class UserSignUpFormController {
     public AnchorPane circle3;
     public AnchorPane circle4;
 
-    UserBO bo = (UserBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.USER);
+    UserBo bo = (UserBo) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.USER);
 
     public void Back(ActionEvent actionEvent) throws IOException {
         this.root.getChildren().clear();
