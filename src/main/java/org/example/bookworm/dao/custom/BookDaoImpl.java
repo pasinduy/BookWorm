@@ -1,5 +1,6 @@
 package org.example.bookworm.dao.custom;
 
+import org.example.bookworm.dao.SuperDao;
 import org.example.bookworm.entity.Book;
 import org.example.bookworm.util.FactoryConfiguration;
 import org.hibernate.Session;
@@ -8,7 +9,7 @@ import org.hibernate.query.NativeQuery;
 
 import java.util.List;
 
-public class BookDaoImpl {
+public class BookDaoImpl implements SuperDao {
 
     public String generateNextId()throws Exception{
         Session session = FactoryConfiguration.getInstance().getSession();

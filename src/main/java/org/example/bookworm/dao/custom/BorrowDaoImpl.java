@@ -1,11 +1,12 @@
 package org.example.bookworm.dao.custom;
 
+import org.example.bookworm.dao.SuperDao;
 import org.example.bookworm.util.FactoryConfiguration;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.NativeQuery;
 
-public class BorrowDaoImpl {
+public class BorrowDaoImpl implements SuperDao {
     public String generateNextValue() throws Exception{
         Session session = FactoryConfiguration.getInstance().getSession();
         Transaction transaction = session.beginTransaction();

@@ -1,4 +1,6 @@
 package org.example.bookworm.dao.custom;
 
-public class BookDetailsDaoImpl {
+import org.example.bookworm.dao.SuperDao;
+
+public class BookDetailsDaoImpl implements SuperDao {
 }

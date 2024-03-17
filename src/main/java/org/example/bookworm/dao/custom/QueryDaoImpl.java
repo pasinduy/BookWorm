@@ -1,5 +1,6 @@
 package org.example.bookworm.dao.custom;
 
+import org.example.bookworm.dao.SuperDao;
 import org.example.bookworm.util.FactoryConfiguration;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -7,7 +8,7 @@ import org.hibernate.query.NativeQuery;
 
 import java.util.List;
 
-public class QueryDaoImpl {
+public class QueryDaoImpl implements SuperDao {
     public List<Object[]> getTransaction(String user)throws Exception {
         Session session = FactoryConfiguration.getInstance().getSession();
         Transaction transaction = session.beginTransaction();
