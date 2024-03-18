@@ -1,9 +1,9 @@
 package org.example.bookworm.Bo.custom.Impl;
 
 import org.example.bookworm.Bo.custom.BookBo;
-import org.example.bookworm.dao.custom.BookDaoImpl;
-import org.example.bookworm.dto.BookDto;
-import org.example.bookworm.entity.Book;
+import org.example.bookworm.Dao.custom.BookDaoImpl;
+import org.example.bookworm.Dto.BookDto;
+import org.example.bookworm.Entity.Book;
 
 import java.util.ArrayList;
 import java.util.List;

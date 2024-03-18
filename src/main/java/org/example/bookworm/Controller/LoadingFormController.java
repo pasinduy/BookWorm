@@ -21,7 +21,7 @@ public class LoadingFormController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        imageView.setImage(new Image("assets/bookworm.png"));
+        imageView.setImage(new Image("/org/example/bookworm/assets/bookworm.png"));
         imageView.setCache(true);
 
         Timeline timeline = new Timeline();
@@ -39,7 +39,7 @@ public class LoadingFormController implements Initializable {
                 currentStage.close();
 
                 Stage newStage = new Stage();
-                newStage.setScene(new Scene(new FXMLLoader(getClass().getResource("/view/loginPage.fxml")).load()));
+                newStage.setScene(new Scene(new FXMLLoader(getClass().getResource("/org/example/bookworm/view/loginPage.fxml")).load()));
                 newStage.show();
             } catch (IOException e) {
                 throw new RuntimeException(e);

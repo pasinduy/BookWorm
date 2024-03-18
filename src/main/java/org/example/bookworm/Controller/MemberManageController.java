@@ -16,9 +16,9 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import org.example.bookworm.Bo.custom.*;
-import org.example.bookworm.dto.*;
-import org.example.bookworm.factory.BoFactory;
-import org.example.bookworm.tm.*;
+import org.example.bookworm.Dto.*;
+import org.example.bookworm.Bo.BoFactory;
+import org.example.bookworm.Dto.tm.*;
 
 import java.io.IOException;
 import java.util.List;

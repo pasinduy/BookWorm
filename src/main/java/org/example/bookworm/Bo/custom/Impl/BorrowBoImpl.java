@@ -1,7 +1,7 @@
 package org.example.bookworm.Bo.custom.Impl;
 
 import org.example.bookworm.Bo.custom.BorrowBo;
-import org.example.bookworm.dao.custom.BorrowDaoImpl;
+import org.example.bookworm.Dao.custom.BorrowDaoImpl;
 
 public class BorrowBoImpl implements BorrowBo {
     BorrowDaoImpl borrowDaO = new BorrowDaoImpl();

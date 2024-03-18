@@ -1,7 +1,7 @@
 package org.example.bookworm.Bo.custom;
 
 import org.example.bookworm.Bo.SuperBo;
-import org.example.bookworm.dto.UserDto;
+import org.example.bookworm.Dto.UserDto;
 
 import java.util.List;
 

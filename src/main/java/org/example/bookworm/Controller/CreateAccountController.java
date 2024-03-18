@@ -11,11 +11,8 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import org.example.bookworm.Bo.custom.*;
-import org.example.bookworm.dto.*;
-import org.example.bookworm.entity.*;
-import org.example.bookworm.factory.BoFactory;
-import org.example.bookworm.tm.*;
-import org.example.bookworm.util.FactoryConfiguration;
+import org.example.bookworm.Dto.*;
+import org.example.bookworm.Bo.BoFactory;
 
 import java.io.IOException;
 

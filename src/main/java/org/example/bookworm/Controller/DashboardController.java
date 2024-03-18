@@ -30,7 +30,7 @@ public class DashboardController {
 
     @FXML
     void MemberOnAction(ActionEvent event) throws IOException {
-        Parent rootNOde = FXMLLoader.load(getClass().getResource("/view/memberManage.fxml"));
+        Parent rootNOde = FXMLLoader.load(getClass().getResource("/org/example/bookworm/view/memberManage.fxml"));
         Scene scene = new Scene(rootNOde);
         Stage stage = (Stage) anchorPane.getScene().getWindow();
         stage.setScene(scene);
@@ -41,7 +41,7 @@ public class DashboardController {
 
     @FXML
     void bookOnAction(ActionEvent event) throws IOException {
-        Parent rootNOde = FXMLLoader.load(getClass().getResource("/view/bookManage.fxml"));
+        Parent rootNOde = FXMLLoader.load(getClass().getResource("/org/example/bookworm/view/bookManage.fxml"));
         Scene scene = new Scene(rootNOde);
         Stage stage = (Stage) anchorPane.getScene().getWindow();
         stage.setScene(scene);
@@ -51,7 +51,7 @@ public class DashboardController {
 
     @FXML
     void borrowOnAction(ActionEvent event) throws IOException {
-        Parent rootNOde = FXMLLoader.load(getClass().getResource("/view/borrowManage.fxml"));
+        Parent rootNOde = FXMLLoader.load(getClass().getResource("/org/example/bookworm/view/borrowManage.fxml"));
         Scene scene = new Scene(rootNOde);
         Stage stage = (Stage) anchorPane.getScene().getWindow();
         stage.setScene(scene);
@@ -61,7 +61,7 @@ public class DashboardController {
 
     @FXML
     void branchOnAction(ActionEvent event) throws IOException {
-        Parent rootNOde = FXMLLoader.load(getClass().getResource("/view/branchManage.fxml"));
+        Parent rootNOde = FXMLLoader.load(getClass().getResource("/org/example/bookworm/view/branchManage.fxml"));
         Scene scene = new Scene(rootNOde);
         Stage stage = (Stage) anchorPane.getScene().getWindow();
         stage.setScene(scene);
@@ -82,7 +82,7 @@ public class DashboardController {
         Optional<ButtonType> result = new Alert(Alert.AlertType.INFORMATION, "Are you sure to Logout?", yes, no).showAndWait();
 
         if (result.orElse(no) == yes) {
-            Parent rootNode =FXMLLoader.load(getClass().getResource("/view/loginPage.fxml"));
+            Parent rootNode =FXMLLoader.load(getClass().getResource("/org/example/bookworm/view/loginPage.fxml"));
             Stage stage = (Stage) anchorPane.getScene().getWindow();
 
             Scene scene=new Scene(rootNode);
@@ -93,7 +93,7 @@ public class DashboardController {
     }
 
     public void historyOnAction(ActionEvent actionEvent) throws IOException {
-        Parent rootNOde = FXMLLoader.load(getClass().getResource("/view/historyManage.fxml"));
+        Parent rootNOde = FXMLLoader.load(getClass().getResource("/org/example/bookworm/view/historyManage.fxml"));
         Scene scene = new Scene(rootNOde);
         Stage stage = (Stage) anchorPane.getScene().getWindow();
         stage.setScene(scene);
@@ -102,7 +102,7 @@ public class DashboardController {
     }
 
     public void timeOutOnAction(ActionEvent actionEvent) throws IOException {
-        Parent rootNOde = FXMLLoader.load(getClass().getResource("/view/timeOutManage.fxml"));
+        Parent rootNOde = FXMLLoader.load(getClass().getResource("/org/example/bookworm/view/timeOutManage.fxml"));
         Scene scene = new Scene(rootNOde);
         Stage stage = (Stage) anchorPane.getScene().getWindow();
         stage.setScene(scene);

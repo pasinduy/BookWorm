@@ -12,8 +12,8 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import org.example.bookworm.Bo.custom.Impl.QueryBoImpl;
-import org.example.bookworm.dto.*;
-import org.example.bookworm.tm.*;
+import org.example.bookworm.Dto.*;
+import org.example.bookworm.Dto.tm.*;
 
 import java.io.IOException;
 import java.util.List;

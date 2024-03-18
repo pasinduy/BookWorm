@@ -11,18 +11,18 @@ import javafx.stage.StageStyle;
 import java.io.IOException;
 
 public class Main extends Application {
+    public static void main(String[] args) {
+        launch();
+    }
+
     @Override
-    public void start(Stage stage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/org/example/bookworm/view/loading.fxml"));
+    public void start(Stage stage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("org/example/bookworm/view/loading.fxml"));
         Scene scene = new Scene(root, 500,500, Color.TRANSPARENT);
         root.setStyle("-fx-background-color: transparent;");
         stage.initStyle(StageStyle.TRANSPARENT);
         stage.setScene(scene);
         stage.centerOnScreen();
         stage.show();
-    }
-
-    public static void main(String[] args) {
-        launch();
     }
 }
