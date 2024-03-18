@@ -1,0 +1,206 @@
+#btnAdd{
+    -fx-background-color: #32CD32; /* Lime Green */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-border-color: transparent;
+    -fx-border-radius: 4px;
+}
+
+#btnAdd:hover{
+    -fx-background-color: #228B22; /* Darker Lime Green on hover */
+}
+
+
+#btnUpdate{
+    -fx-background-color: #4169E1; /* Royal Blue */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-border-color: transparent;
+    -fx-border-radius: 4px;
+}
+
+#btnUpdate:hover{
+    -fx-background-color: #1E90FF; /* Darker Royal Blue on hover */
+}
+
+#btnDelete{
+    -fx-background-color: #DC143C; /* Crimson */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-border-color: transparent;
+    -fx-border-radius: 4px;
+}
+
+#btnDelete:hover{
+    -fx-background-color: #B22222; /* Darker Crimson on hover */
+}
+
+/* Style for table */
+.table-view {
+    -fx-font-size: 14px;
+}
+
+/* Style for table header */
+.table-view .column-header {
+    -fx-background-color: #b0c4de; /* Light Steel Blue */
+    -fx-text-fill: white;
+}
+
+/* Style for table cell */
+.table-cell {
+    -fx-padding: 8px;
+}
+
+/* Style for even rows */
+.table-row-cell:even {
+    -fx-background-color: #e6e6fa; /* Lavender */
+}
+
+/* Style for odd rows */
+.table-row-cell:odd {
+    -fx-background-color: #d8bfd8; /* Thistle */
+}
+
+/* Style for selected rows */
+.table-row-cell:selected {
+    -fx-background-color: #9370db; /* Medium Purple */
+}
+
+/* Style for alternating row colors in selected rows */
+.table-row-cell:odd:selected,
+.table-row-cell:even:selected {
+    -fx-background-color: #8a2be2; /* Blue Violet */
+}
+
+/* Style for combo box */
+.combo-box {
+    -fx-font-size: 14px;
+    -fx-pref-width: 200px; /* Set preferred width */
+}
+
+/* Style for combo box button */
+.combo-box .arrow-button {
+    -fx-background-color: #9370db; /* Medium Purple */
+    -fx-text-fill: white;
+}
+
+.combo-box .arrow-button:hover {
+    -fx-background-color: #8a2be2; /* Blue Violet on hover */
+}
+
+/* Style for combo box list */
+.combo-box .list-view {
+    -fx-font-size: 14px;
+    -fx-background-color: #e6e6fa; /* Lavender */
+}
+
+/* Style for combo box list item */
+.combo-box .list-cell {
+    -fx-padding: 4px 8px;
+}
+
+/* Style for combo box list item on hover */
+.combo-box .list-cell:hover {
+    -fx-background-color: #d8bfd8; /* Thistle */
+}
+
+/* Style for combo box list item when selected */
+.combo-box .list-cell:selected {
+    -fx-background-color: #8a2be2; /* Blue Violet */
+    -fx-text-fill: white;
+}
+
+/* Style for date picker */
+.date-picker {
+    -fx-font-size: 14px;
+    -fx-pref-width: 200px; /* Set preferred width */
+}
+
+/* Style for date picker button */
+.date-picker .arrow-button {
+    -fx-background-color: #9370db; /* Medium Purple */
+    -fx-text-fill: white;
+}
+
+.date-picker .arrow-button:hover {
+    -fx-background-color: #8a2be2; /* Blue Violet on hover */
+}
+
+/* Style for date picker popup */
+.date-picker .popup {
+    -fx-background-color: #e6e6fa; /* Lavender */
+}
+
+/* Style for date picker popup content */
+.date-picker .date-picker-popup > .content {
+    -fx-background-color: #e6e6fa; /* Lavender */
+}
+
+/* Style for date picker popup calendar days */
+.date-picker .calendar-date-cell {
+    -fx-font-size: 14px;
+}
+
+/* Style for date picker popup calendar day button */
+.date-picker .calendar-date-cell .date-button {
+    -fx-background-color: #e6e6fa; /* Lavender */
+}
+
+.date-picker .calendar-date-cell .date-button:hover {
+    -fx-background-color: #d8bfd8; /* Thistle on hover */
+}
+
+/* Style for date picker popup selected date */
+.date-picker .calendar-date-cell:selected .date-button {
+    -fx-background-color: #8a2be2; /* Blue Violet */
+    -fx-text-fill: white;
+}
+
+#btnReturn{
+    -fx-background-color: #4169E1; /* Royal Blue */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-border-color: transparent;
+    -fx-border-radius: 4px;
+}
+
+#btnReturn:hover{
+    -fx-background-color: #1E90FF; /* Darker Royal Blue on hover */
+}
+
+#btnBorrow{
+    -fx-background-color: #32CD32; /* Lime Green */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-border-color: transparent;
+    -fx-border-radius: 4px;
+}
+
+#btnBorrow:hover{
+    -fx-background-color: #228B22; /* Darker Lime Green on hover */
+}
+
+/* Style for text fields */
+.text-field {
+    -fx-font-size: 14px;
+    -fx-pref-width: 200px; /* Set preferred width */
+    -fx-background-color: #e6e6fa; /* Lavender */
+    -fx-text-fill: #8a2be2; /* Blue Violet text color */
+    -fx-border-color: #9370db; /* Medium Purple border color */
+    -fx-border-radius: 4px;
+    -fx-padding: 4px;
+}
+
+.text-field:focused {
+    -fx-border-color: #8a2be2; /* Blue Violet border color when focused */
+}
+
+/* Style for prompt text */
+.text-field .prompt-text {
+    -fx-text-fill: #9370db; /* Medium Purple prompt text color */
+}

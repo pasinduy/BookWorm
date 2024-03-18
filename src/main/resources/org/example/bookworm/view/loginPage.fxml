@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="AnchorPane" prefHeight="508.0" prefWidth="673.0" style="-fx-background-color: FFFFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookworm.Controller.LoginPageController">
+<AnchorPane fx:id="AnchorPane" prefHeight="508.0" prefWidth="673.0" style="-fx-background-color: FFFFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bookworm.Controller.LoginPageController">
    <children>
       <JFXButton buttonType="RAISED" layoutX="398.0" layoutY="335.0" onAction="#loginOnAction" prefHeight="38.0" prefWidth="151.0" style="-fx-background-color: #7a17cc; -fx-background-radius: 10;" text="Login" textFill="WHITE" AnchorPane.leftAnchor="398.0" AnchorPane.rightAnchor="124.0" AnchorPane.topAnchor="335.0">
          <font>
