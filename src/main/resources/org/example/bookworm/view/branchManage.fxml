@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookworm.Controller.branchManageController">
+    <children>
+        <Text fill="#7a17cc" layoutX="55.0" layoutY="146.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Branch Manage">
+            <font>
+                <Font name="System Bold" size="86.0" />
+            </font>
+        </Text>
+        <JFXTextField fx:id="txtName" labelFloat="true" layoutX="64.0" layoutY="323.0" prefHeight="25.0" prefWidth="231.0" promptText="Name" stylesheets="@../style/button.css">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </JFXTextField>
+        <JFXTextField fx:id="txtLocation" layoutX="350.0" layoutY="323.0" prefHeight="25.0" prefWidth="231.0" promptText="Location" stylesheets="@../style/button.css">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </JFXTextField>
+        <JFXTextField fx:id="txtAddress" labelFloat="true" layoutX="64.0" layoutY="422.0" prefHeight="31.0" prefWidth="231.0" promptText="Address" stylesheets="@../style/button.css">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </JFXTextField>
+        <JFXComboBox fx:id="cmbAdmin" layoutX="350.0" layoutY="427.0" prefHeight="25.0" prefWidth="231.0" promptText="Admin" stylesheets="@../style/button.css" />
+        <TableView fx:id="tblBook" layoutX="627.0" layoutY="186.0" onMouseClicked="#mouseClickOnAction" prefHeight="422.0" prefWidth="614.0" stylesheets="@../style/button.css">
+            <columns>
+            <TableColumn fx:id="colId" prefWidth="92.0" text="Id" />
+                <TableColumn fx:id="colName" prefWidth="120.0" text="Name" />
+                <TableColumn fx:id="colLocation" prefWidth="134.0" text="Location" />
+                <TableColumn fx:id="colAddress" minWidth="0.0" prefWidth="147.0" text="Address" />
+                <TableColumn fx:id="colAdmin" prefWidth="120.0" text="Admin" />
+            </columns>
+        </TableView>
+        <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="69.0" layoutY="596.0" onAction="#addOnAction" prefHeight="41.0" prefWidth="109.0" stylesheets="@../style/button.css" text="Add" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="233.0" layoutY="596.0" onAction="#updateOnAction" prefHeight="41.0" prefWidth="109.0" stylesheets="@../style/button.css" text="Update" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="397.0" layoutY="596.0" onAction="#deleteOnAction" prefHeight="41.0" prefWidth="109.0" stylesheets="@../style/button.css" text="Delete" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </JFXButton>
+      <Text fill="#0d00ff" layoutX="65.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Branch Id :" wrappingWidth="95.19997558593741">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtId" fill="#36a420" layoutX="165.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B001" wrappingWidth="74.20001220703125">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="67.0" fitWidth="71.0" layoutX="1194.0" layoutY="49.0" onMouseClicked="#closeOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/left-arrow.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
