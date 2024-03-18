@@ -1,12 +1,16 @@
-package org.example.bookworm.Dao.custom;
+package org.example.bookworm.Dao.custom.Impl;
 
-import org.example.bookworm.Dao.SuperDao;
+import org.example.bookworm.Dao.SuperDAO;
 import org.example.bookworm.Config.FactoryConfiguration;
+import org.example.bookworm.Dao.custom.BorrowDAO;
+import org.example.bookworm.Entity.Borrow;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.NativeQuery;
 
-public class BorrowDaoImpl implements SuperDao {
+import java.util.List;
+
+public class BorrowDAOImpl implements BorrowDAO {
     public String generateNextValue() throws Exception{
         Session session = FactoryConfiguration.getInstance().getSession();
         Transaction transaction = session.beginTransaction();
@@ -77,5 +81,35 @@ public class BorrowDaoImpl implements SuperDao {
             }
         }
         return "OD001";
+    }
+
+    @Override
+    public String generateNextId() throws Exception {
+        return null;
+    }
+
+    @Override
+    public List<Borrow> getAll() throws Exception {
+        return null;
+    }
+
+    @Override
+    public boolean save(Borrow book) throws Exception {
+        return false;
+    }
+
+    @Override
+    public boolean delete(Borrow book) throws Exception {
+        return false;
+    }
+
+    @Override
+    public boolean update(Borrow book) throws Exception {
+        return false;
+    }
+
+    @Override
+    public Borrow search(String id) throws Exception {
+        return null;
     }
 }

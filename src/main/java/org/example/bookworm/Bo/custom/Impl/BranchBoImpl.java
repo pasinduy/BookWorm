@@ -1,8 +1,8 @@
 package org.example.bookworm.Bo.custom.Impl;
 
 import org.example.bookworm.Bo.custom.BranchBo;
-import org.example.bookworm.Dao.custom.AdminDaoImpl;
-import org.example.bookworm.Dao.custom.BranchDaoImpl;
+import org.example.bookworm.Dao.custom.Impl.AdminDAOImpl;
+import org.example.bookworm.Dao.custom.Impl.BranchDAOImpl;
 import org.example.bookworm.Dto.BranchDto;
 import org.example.bookworm.Entity.Book;
 import org.example.bookworm.Entity.Branch;
@@ -12,11 +12,11 @@ import java.util.List;
 
 public class BranchBoImpl implements BranchBo {
 
-    BranchDaoImpl branchDao = new BranchDaoImpl();
-    AdminDaoImpl adminDao = new AdminDaoImpl();
+    BranchDAOImpl branchDao = new BranchDAOImpl();
+    AdminDAOImpl adminDao = new AdminDAOImpl();
     @Override
     public String generateNextId() throws Exception{
-        return branchDao.genatareNextId();
+        return branchDao.generateNextId();
     }
 
     @Override

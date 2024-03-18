@@ -1,7 +1,7 @@
 package org.example.bookworm.Bo.custom.Impl;
 
 import org.example.bookworm.Bo.custom.QueryBo;
-import org.example.bookworm.Dao.custom.QueryDaoImpl;
+import org.example.bookworm.Dao.custom.Impl.QueryDAOImpl;
 import org.example.bookworm.Dto.TimeOutDto;
 import org.example.bookworm.Dto.TransactionDto;
 
@@ -10,7 +10,7 @@ import java.util.Date;
 import java.util.List;
 
 public class QueryBoImpl implements QueryBo {
-    QueryDaoImpl queryDao = new QueryDaoImpl();
+    QueryDAOImpl queryDao = new QueryDAOImpl();
     public List<TransactionDto> getTransactions(String user) throws Exception{
         List<Object[]> objects= queryDao.getTransaction(user);
 

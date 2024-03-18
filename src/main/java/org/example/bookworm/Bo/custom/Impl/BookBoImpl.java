@@ -1,7 +1,7 @@
 package org.example.bookworm.Bo.custom.Impl;
 
 import org.example.bookworm.Bo.custom.BookBo;
-import org.example.bookworm.Dao.custom.BookDaoImpl;
+import org.example.bookworm.Dao.custom.Impl.BookDAOImpl;
 import org.example.bookworm.Dto.BookDto;
 import org.example.bookworm.Entity.Book;
 
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BookBoImpl implements BookBo {
-    BookDaoImpl bookDao = new BookDaoImpl();
+    BookDAOImpl bookDao = new BookDAOImpl();
     @Override
     public String generateNextBookId() throws Exception {
         return bookDao.generateNextId();
@@ -35,7 +35,7 @@ public class BookBoImpl implements BookBo {
 
     @Override
     public boolean saveBook(BookDto bookDto) throws Exception {
-        return bookDao.Save(new Book(
+        return bookDao.save(new Book(
                 bookDto.getId(),
                 bookDto.getTitle(),
                 bookDto.getAuthor(),

@@ -165,11 +165,11 @@ public class BookManageController {
             try {
                 boolean isSaved = bookBo.saveBook(new BookDto(id, title, author, Genre, Status, branch));
                 if (isSaved) {
-                    new Alert(Alert.AlertType.CONFIRMATION, "Save Successfully").show();
+                    new Alert(Alert.AlertType.CONFIRMATION, "save Successfully").show();
                     initialize();
                     clearFeilds();
                 } else {
-                    new Alert(Alert.AlertType.ERROR, "Save Failed").show();
+                    new Alert(Alert.AlertType.ERROR, "save Failed").show();
                 }
             } catch (Exception e) {
 

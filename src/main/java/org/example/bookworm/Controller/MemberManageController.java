@@ -128,7 +128,7 @@ public class MemberManageController {
                     initialize();
                     clearFields();
                 } else {
-                    new Alert(Alert.AlertType.ERROR, "Save Failed").show();
+                    new Alert(Alert.AlertType.ERROR, "save Failed").show();
                 }
 
             } catch (Exception e) {

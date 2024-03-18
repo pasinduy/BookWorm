@@ -1,6 +1,6 @@
 package org.example.bookworm.Dao;
 
-import org.example.bookworm.Dao.custom.*;
+import org.example.bookworm.Dao.custom.Impl.*;
 
 public class DaoFactory {
     private static DaoFactory daoFactory;
@@ -10,25 +10,23 @@ public class DaoFactory {
     public static DaoFactory getDaoFactory(){return daoFactory == null? daoFactory = new DaoFactory() : daoFactory;}
 
     public enum DAOTypes{
-        ADMIN, BOOK, BRANCH, BORROW, USER, QUERY, BOOKDETAILS
+        ADMIN, BOOK, BRANCH, BORROW, USER, QUERY
     }
 
-    public SuperDao getDAO(DAOTypes types) {
+    public SuperDAO getDAO(DAOTypes types) {
         switch (types) {
             case ADMIN:
-                return new AdminDaoImpl();
+                return new AdminDAOImpl();
             case BOOK:
-                return new BookDaoImpl();
-            case BOOKDETAILS:
-                return new BookDetailsDaoImpl();
+                return new BookDAOImpl();
             case BRANCH:
-                return new BranchDaoImpl();
+                return new BranchDAOImpl();
             case BORROW:
-                return new BorrowDaoImpl();
+                return new BorrowDAOImpl();
             case USER:
-                return  new UserDaoImpl();
+                return  new UserDAOImpl();
             case QUERY:
-                return new QueryDaoImpl();
+                return new QueryDAOImpl();
             default:
                 return null;
         }

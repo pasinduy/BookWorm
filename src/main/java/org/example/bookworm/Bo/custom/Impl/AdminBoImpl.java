@@ -1,7 +1,7 @@
 package org.example.bookworm.Bo.custom.Impl;
 
 import org.example.bookworm.Bo.custom.AdminBo;
-import org.example.bookworm.Dao.custom.AdminDaoImpl;
+import org.example.bookworm.Dao.custom.Impl.AdminDAOImpl;
 import org.example.bookworm.Dto.AdminDto;
 import org.example.bookworm.Entity.Admin;
 import org.example.bookworm.Entity.Branch;
@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AdminBoImpl implements AdminBo {
-    AdminDaoImpl adminDao = new AdminDaoImpl();
+    AdminDAOImpl adminDao = new AdminDAOImpl();
 
     @Override
     public boolean saveCustomer(AdminDto adminDto) throws Exception {

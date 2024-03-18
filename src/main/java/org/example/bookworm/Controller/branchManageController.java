@@ -147,15 +147,15 @@ public class branchManageController {
                 boolean isSaved = branchBo.save(new BranchDto(id, name, location, address, admin));
 
                 if (isSaved) {
-                    new Alert(Alert.AlertType.CONFIRMATION, "Save SuccessFully").show();
+                    new Alert(Alert.AlertType.CONFIRMATION, "save SuccessFully").show();
                     initialize();
                     clearFields();
                 } else {
-                    new Alert(Alert.AlertType.ERROR, "Save Failed").show();
+                    new Alert(Alert.AlertType.ERROR, "save Failed").show();
                 }
 
             } catch (Exception e) {
-                new Alert(Alert.AlertType.ERROR, "Save Failed").show();
+                new Alert(Alert.AlertType.ERROR, "save Failed").show();
             }
         }
 

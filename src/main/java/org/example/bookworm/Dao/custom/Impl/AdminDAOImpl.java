@@ -1,6 +1,7 @@
-package org.example.bookworm.Dao.custom;
+package org.example.bookworm.Dao.custom.Impl;
 
-import org.example.bookworm.Dao.SuperDao;
+import org.example.bookworm.Dao.SuperDAO;
+import org.example.bookworm.Dao.custom.AdminDAO;
 import org.example.bookworm.Entity.Admin;
 import org.example.bookworm.Config.FactoryConfiguration;
 import org.hibernate.Session;
@@ -9,7 +10,7 @@ import org.hibernate.query.NativeQuery;
 
 import java.util.List;
 
-public class AdminDaoImpl implements SuperDao {
+public class AdminDAOImpl implements AdminDAO {
 
     public boolean save(Admin admin)throws Exception{
         Session session = FactoryConfiguration.getInstance().getSession();
@@ -21,6 +22,21 @@ public class AdminDaoImpl implements SuperDao {
         session.close();
 
         return true;
+    }
+
+    @Override
+    public boolean delete(Admin book) throws Exception {
+        return false;
+    }
+
+    @Override
+    public boolean update(Admin book) throws Exception {
+        return false;
+    }
+
+    @Override
+    public Admin search(String id) throws Exception {
+        return null;
     }
 
     public List getAll()throws Exception{

@@ -1,7 +1,7 @@
 package org.example.bookworm.Bo.custom.Impl;
 
 import org.example.bookworm.Bo.custom.UserBo;
-import org.example.bookworm.Dao.custom.UserDaoImpl;
+import org.example.bookworm.Dao.custom.Impl.UserDAOImpl;
 import org.example.bookworm.Dto.UserDto;
 import org.example.bookworm.Entity.User;
 
@@ -10,7 +10,7 @@ import java.util.List;
 
 public class UserBoImpl implements UserBo {
 
-    UserDaoImpl userDao = new UserDaoImpl();
+    UserDAOImpl userDao = new UserDAOImpl();
     @Override
     public List<UserDto> getAllUser() throws Exception {
         List<User> users = userDao.getAll();

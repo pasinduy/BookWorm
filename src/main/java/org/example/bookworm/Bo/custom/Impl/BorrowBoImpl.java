@@ -1,10 +1,10 @@
 package org.example.bookworm.Bo.custom.Impl;
 
 import org.example.bookworm.Bo.custom.BorrowBo;
-import org.example.bookworm.Dao.custom.BorrowDaoImpl;
+import org.example.bookworm.Dao.custom.Impl.BorrowDAOImpl;
 
 public class BorrowBoImpl implements BorrowBo {
-    BorrowDaoImpl borrowDaO = new BorrowDaoImpl();
+    BorrowDAOImpl borrowDaO = new BorrowDAOImpl();
     @Override
     public String generateNextOrderDetailId() throws Exception {
         return borrowDaO.generateNextValue2();

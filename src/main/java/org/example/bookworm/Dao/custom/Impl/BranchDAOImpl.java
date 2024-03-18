@@ -1,6 +1,6 @@
-package org.example.bookworm.Dao.custom;
+package org.example.bookworm.Dao.custom.Impl;
 
-import org.example.bookworm.Dao.SuperDao;
+import org.example.bookworm.Dao.custom.BranchDAO;
 import org.example.bookworm.Entity.Branch;
 import org.example.bookworm.Config.FactoryConfiguration;
 import org.hibernate.Session;
@@ -9,9 +9,9 @@ import org.hibernate.query.NativeQuery;
 
 import java.util.List;
 
-public class BranchDaoImpl implements SuperDao {
+public class BranchDAOImpl implements BranchDAO {
 
-    public String genatareNextId()throws Exception {
+    public String generateNextId()throws Exception {
         Session session = FactoryConfiguration.getInstance().getSession();
         Transaction transaction = session.beginTransaction();
 
@@ -96,5 +96,10 @@ public class BranchDaoImpl implements SuperDao {
         session.close();
 
         return true;
+    }
+
+    @Override
+    public Branch search(String id) throws Exception {
+        return null;
     }
 }
